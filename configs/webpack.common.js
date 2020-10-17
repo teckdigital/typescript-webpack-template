@@ -23,7 +23,8 @@ module.exports = {
     alias: {
       "~": Path.resolve(__dirname, "../src"),
     },
-    extensions: [".js", ".ts"],
+      extensions: ['.js',  '.json', '.ts'],
+      modules: [Path.join(__dirname, '..', 'src'), 'node_modules'],
   },
   module: {
     rules: [

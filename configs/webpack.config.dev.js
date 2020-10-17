@@ -14,13 +14,13 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        include: Path.resolve(__dirname, "../src"),
+        options: {
+          eslintPath: require.resolve("eslint"),
+        },
+        test: /\.(js|ts)$/,
         enforce: "pre",
         loader: "eslint-loader",
-        options: {
-          emitWarning: true,
-        },
+        exclude: /node_modules/,
       },
       {
         test: /\.(js|ts)$/,
