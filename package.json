@@ -16,7 +16,8 @@
     "type": "git",
     "url": "https://github.com/teck-digital/typescript-webpack-template"
   },
-  "contributors": [{
+  "contributors": [
+    {
       "name": "Timo Peters",
       "email": "peters@teck-digital.de"
     },

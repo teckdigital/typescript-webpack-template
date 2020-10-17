@@ -1,5 +1,4 @@
 const Path = require("path");
-const Webpack = require("webpack");
 const { merge } = require("webpack-merge");
 const RunNodeWebpackPlugin = require("run-node-webpack-plugin");
 
@@ -24,8 +23,8 @@ module.exports = merge(common, {
         },
       },
       {
-        test: /\.js$/,
-        include: Path.resolve(__dirname, "../src"),
+        test: /\.(js|ts)$/,
+        exclude: /node_modules/,
         loader: "babel-loader",
       },
     ],
