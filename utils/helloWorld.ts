@@ -1,3 +1,3 @@
-export default function printHelloWorld() {
-  console.log("Hello World");
+export default function printHelloWorld(): void {
+  console.log('Hello World');
 }

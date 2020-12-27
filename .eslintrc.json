@@ -3,8 +3,15 @@
     "es2020": true,
     "node": true
   },
+  "plugins": [
+    "@typescript-eslint/eslint-plugin",
+    "prettier"
+  ],
   "extends": [
-    "airbnb-base"
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -12,24 +19,28 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": [
-    "@typescript-eslint"
-  ],
   "rules": {
-    "quotes": ["error", "double"],
-    "import/extensions": "off",
-    "import/no-unresolved": "off"
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "quotes": [
+      "error",
+      "single"
+    ]
   },
   "settings": {
     "import/resolver": {
       // See https://github.com/benmosher/eslint-plugin-import/issues/1396#issuecomment-575727774 for line below
       "node": {},
       "webpack": {
-        "config":"./configs/webpack.config.dev.js"
+        "config": "./configs/webpack.config.dev.js"
       }
     },
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
     }
   }
 }

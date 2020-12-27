@@ -1,6 +1,7 @@
 const Path = require("path");
 const { merge } = require("webpack-merge");
 const RunNodeWebpackPlugin = require("run-node-webpack-plugin");
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const common = require("./webpack.common.js");
 
@@ -10,18 +11,9 @@ module.exports = merge(common, {
   output: {
     chunkFilename: "[name].chunk.js",
   },
-  plugins: [new RunNodeWebpackPlugin()],
+  plugins: [new RunNodeWebpackPlugin(), new ESLintPlugin({extensions: ['js', 'ts']})],
   module: {
     rules: [
-      {
-        options: {
-          eslintPath: require.resolve("eslint"),
-        },
-        test: /\.(js|ts)$/,
-        enforce: "pre",
-        loader: "eslint-loader",
-        exclude: /node_modules/,
-      },
       {
         test: /\.(js|ts)$/,
         exclude: /node_modules/,
