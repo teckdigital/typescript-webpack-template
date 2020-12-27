@@ -146,7 +146,7 @@ yarn remove run-node-webpack-plugin
 ```
 
 **Important:** You will most likely have to update your package.json scripts too,
-if you want to opt out entirely. See [Updating package.json](#updating-package.json).
+if you want to opt out entirely. See [Updating package.json](#updating-packagejson).
 
 
 ## Contributing
