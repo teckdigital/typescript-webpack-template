@@ -10,7 +10,7 @@ yarn install
 ```
 
 ### Traditional way:
-Alternatively you can clone it via git. After, that just install the dependencies via yarn.
+Alternatively you can clone it via git. After that, just install the dependencies via yarn.
 
 ```
 # Clone the repository

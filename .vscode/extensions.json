@@ -1,8 +1,9 @@
 
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "EditorConfig.EditorConfig",
-    "christian-kohler.npm-intellisense"
+      "dbaeumer.vscode-eslint",
+      "EditorConfig.EditorConfig",
+      "christian-kohler.npm-intellisense",
+      "esbenp.prettier-vscode"
   ]
 }
