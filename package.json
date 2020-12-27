@@ -1,6 +1,6 @@
 {
   "name": "typescript-webpack-template",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A typescript webpack template for hot reload script development.",
   "main": "index.ts",
   "scripts": {
