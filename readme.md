@@ -17,7 +17,7 @@ Alternatively you can clone it via git. After that, just install the dependencie
 $ git clone https://github.com/teck-digital/typescript-webpack-template
 
 # Go into the repository
-$ cd typescript-webpack-config
+$ cd typescript-webpack-template
 
 # Install dependencies
 $ yarn install
@@ -89,9 +89,9 @@ $ npm run dev
 
 ### Modifying executed file
 
-By default, when webpack config contains only one output file that file will be run. 
-If more files are present, then a file named server.js or index.js (whichever exists) will be run.
-If you need to modify this, you can pass in the following option to your webpack config:
+By default, when webpack config contains only one output file, that file will be run. 
+If more files are present, a file named server.js or index.js (whichever exists) will be run.
+If you need to modify this, you can pass the following option to your webpack config:
 
 ```javascript
 // config/webpack.config.dev.js
@@ -99,7 +99,8 @@ If you need to modify this, you can pass in the following option to your webpack
 ... 
 
 plugins: [
-  plugins: [new RunNodeWebpackPlugin({scriptToRun: "yourScript.js"}), ...],
+  new RunNodeWebpackPlugin({scriptToRun: "yourScript.js"}),
+  ...
 ],
 
 ...
