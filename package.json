@@ -27,27 +27,6 @@
       "url": "https://h4hn.de"
     }
   ],
-  "prettier": {
-    "overrides": [
-      {
-        "files": [
-          ".prettierrc",
-          ".babelrc",
-          ".eslintrc",
-          ".stylelintrc"
-        ],
-        "options": {
-          "parser": "json"
-        }
-      }
-    ]
-  },
-  "stylelint": {
-    "extends": [
-      "stylelint-config-standard",
-      "stylelint-config-prettier"
-    ]
-  },
   "license": "UNLICENSED",
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -92,8 +71,7 @@
     "webpack-merge": "^5.1.4",
     "webpack-node-externals": "^2.5.2"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devEngines": {
     "node": ">=7.x",
     "npm": ">=4.x",
